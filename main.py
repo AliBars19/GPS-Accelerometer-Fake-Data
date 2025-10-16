@@ -6,29 +6,13 @@
 #Message
 #Footer
 
-#Were gna make the fake/raw data in JSON format
-
 #ID: 501 , latitude 
 #ID: 502 , Longitude
 #ID: 503 , altitude & speed
 #ID: 504 , Heading
 #ID: 505 , num_sat & fix_type
 
-
 #------------------
-
-#CANGPS
-#Usually Broadcasted in NMEA 0183 Format which is in ASCII
-#But canGPS automatically encapsulates it in can frames which we can use
-#We will be using the SilverStone Circuit to simulate the GPS Data
-
-#So I couldnt get the nmea injector working so were gna do smth different instead
-
-#were gna pick 5 corners on the track and have the gps go to them in straight lines
-
-##THINGS TO ASK FOR TOMORROW
-# how precise is the canGPS. if its total 8 digits(52.072501) then is that 1 can frame, then the other frame sends teh long
-# if the precision is 6 didgits(52.0725) then what do we do with the other 2 digits, do we just add 00 at the end or smth
 
 import json
 import struct
