@@ -14,7 +14,6 @@
 #ID: 504 , Heading
 #ID: 505 , num_sat & fix_type
 
-#IMPORTANT, CAN SENDS TWO AT A TIME SO MAKE SURE TO PAIR THEM
 
 #------------------
 
@@ -44,14 +43,12 @@ with open('gps_silverstone.json', 'r') as f:
 
 def make_frame(id, values,timestamp, fmt='>f'):  #packs data into can frame, if not full 8 bytes is ysed, fills rest with 0
 
-        # values_bytes = struct.pack(fmt, values)
-
-        if isinstance(values, tuple):
+        if isinstance(values, tuple): # this is used for (altitude and speed) and (fix_type and num_sat)
             values_bytes = struct.pack(fmt, *values)
         else:
             values_bytes = struct.pack(fmt, values)
 
-        if len(values_bytes) < 8:
+        if len(values_bytes) < 8: # used to pack lat long and heading
             values_bytes += b'\x00' * (8 - len(values_bytes))
         elif len(values_bytes) > 8:
             values_bytes = values_bytes[:8]  # Truncate to 8 bytes
@@ -63,7 +60,7 @@ def make_frame(id, values,timestamp, fmt='>f'):  #packs data into can frame, if 
 
 
 for point in gps_data:
-   timestamp = int(point['timestamp'])  # convert to nanoseconds
+   timestamp = int(point['timestamp'])  # declaring everything
    data = point.get('data',{})
    topic = str(point.get('topic'))
 
@@ -75,7 +72,7 @@ for point in gps_data:
    fix_type = int(data.get('fix_type'))
    num_satellites = int(data.get('num_satellites'))
 
-   can_stream.append(make_frame(501, lat,timestamp,fmt=">d"))
+   can_stream.append(make_frame(501, lat,timestamp,fmt=">d")) #making the can frames
    can_stream.append(make_frame(502, lon,timestamp,fmt=">d"))
    can_stream.append(make_frame(503, (alt,speed),timestamp,fmt=">ff"))
    can_stream.append(make_frame(504, heading,timestamp,fmt=">d"))
