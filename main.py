@@ -28,70 +28,88 @@
 # how precise is the canGPS. if its total 8 digits(52.072501) then is that 1 can frame, then the other frame sends teh long
 # if the precision is 6 didgits(52.0725) then what do we do with the other 2 digits, do we just add 00 at the end or smth
 
-
+import json
+import string
 import struct
 import time
-import json
-
-
+from time import time_ns
+from mcap.writer import Writer
+from mcap.reader import make_reader
+from numpy import double
 
 can_stream = [] #the list of can frames
-base_time = 1700000000000000000  #epoch time in nanoseconds
 
 with open('gps_silverstone.json', 'r') as f:
     gps_data = json.load(f)
 
+def make_frame(id, values,timestamp, fmt='>f'):  #packs data into can frame, if not full 8 bytes is ysed, fills rest with 0
+
+        values_bytes = struct.pack(fmt, values)
+        if len(values_bytes) < 8:
+            values_bytes += b'\x00' * (8 - len(values_bytes))
+        elif len(values_bytes) > 8:
+            values_bytes = values_bytes[:8]  # Truncate to 8 bytes
+        return {
+            "id": id,
+            "timestamp": timestamp,
+            "data": list(values_bytes)
+        }
+
+
 for point in gps_data:
-    lat = float(point['lat'])
-    long = float(point['long'])
-    lat_bytes = struct.pack('>f', lat)  # Convert latitude to 4 bytes
-    long_bytes = struct.pack('>f', long)  # Convert longitude to 4 bytes
+   timestamp = int(point['timestamp'])  # convert to nanoseconds
+   data = point.get('data',{})
+   topic = str(point.get('topic'))
 
-    can_frame = {
-        "timestamp": base_time + i * 1000000000,  # Increment time
-        "id": 501,
-        "data": list(lat_bytes + long_bytes)  # Combine lat and long bytes
-    }
+   lat = float(data.get('latitude'))
+   lon = float(data.get('longitude', 0.0))
+   alt = float(data.get('altitude', 0.0))
+   speed = float(data.get('speed', 0.0))
+   heading = float(data.get('heading', 0.0))
+   fix_type = float(data.get('fix_type', 0.0))
+   num_satellites = float(data.get('num_satellites', 0.0))
 
-    can_stream.append(can_frame)
+   can_stream.append(make_frame(501, lat,timestamp,fmt=">d"))
+   can_stream.append(make_frame(502, lon,timestamp,fmt=">d"))
+   can_stream.append(make_frame(503, alt,timestamp,fmt=">d"))
+   can_stream.append(make_frame(504, speed,timestamp,fmt=">d"))
+   can_stream.append(make_frame(505, heading,timestamp,fmt=">d"))
+   can_stream.append(make_frame(506, fix_type,timestamp,fmt=">d"))
+   can_stream.append(make_frame(507, num_satellites,timestamp,fmt=">d"))
+
+   can_frame = {
+           "topic": topic,
+           "timestamp": timestamp, 
+           "data":{
+               "latitude": lat,
+               "longitude": lon,
+               "altitude": alt,
+               "speed": speed,
+               "heading": heading,
+               "fix_type": fix_type,
+               "num_satellites": num_satellites
+           }  
+       }
+
+   can_stream.append(can_frame)
 
 with open('can_gps_stream.json', 'w') as f:
     json.dump(can_stream, f, indent=4)
 
 with open('can_gps_stream.json', 'r') as f:
-    can_stream = json.load(f)   
-
-#^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ this is a can to JSON converter now we are gonna combine this with JSON to MCAP
-
-
-
+    can_stream = json.load(f)  
+#------------------
+#MCAP WRITER
+#------------------
 
 
 
 
+can_data = "can_gps_stream.json"
 
-
-
-
-
-
-
-
-
-
-import json
-from time import time_ns
-from mcap.writer import Writer
-from mcap.reader import make_reader
-import requests
-
-# Get CAN data from URL
-url = "C:\\Users\\aliba\\Downloads\\UNI\\Formula Student\\GPS Fake Data\\GPS-Accelerometer-Fake-Data\\GPS-Accelerometer-Fake-Data\\can_gps_stream.json"
-can_data = requests.get(url, stream=True)
-can_data.raise_for_status()  # check if request was successful
-
-
-can_data_json = can_data.json()  
+# get json data from file 
+with open(can_data, "r") as f:
+    can_data_json = json.load(f)
 
 with open("candata.mcap", "wb") as stream:
     writer = Writer(stream)
@@ -106,6 +124,7 @@ with open("candata.mcap", "wb") as stream:
             "properties": {
                 "id": {"type": "integer"},
                 "time": {"type": "number"},
+                "timestamp": {"type": "number"},
                 "data": {
                     "type": "array",
                     "items": {"type": "integer"}
@@ -121,10 +140,21 @@ with open("candata.mcap", "wb") as stream:
         message_encoding="json",
     )
 
-    for entry in can_data_json:
-        # Convert time to nanoseconds for MCAP log-time
-        log_time = int(entry["time"] * 1e9)
-        
+    for entry_idx, entry in enumerate(can_data_json):
+        if "time" in entry:
+            time_s = float(entry["time"])
+            log_time = int(time_s * 1_000_000_000)
+        elif "timestamp" in entry:
+            ts = entry["timestamp"]
+            if isinstance(ts, int) or (isinstance(ts, float) and ts > 1e12):
+                log_time = int(ts)
+            else:
+                log_time = int(float(ts) * 1_000_000_000)
+        else:
+            print(f"Warning: Entry {entry_idx} has no 'time' or 'timestamp'; using current time")
+            log_time = time_ns()
+
+        log_time = log_time
         
         entry_json = json.dumps(entry).encode("utf-8")
         
@@ -156,9 +186,9 @@ with open("candata.mcap", "rb") as f:
             message_count += 1
             
             
-            if message_count >= 5:
-                print(f"... (showing first 5 messages out of total)")
-                break
+            # if message_count >= 5:
+            #     print(f"... (showing first 5 messages out of total)")
+            #     break
                 
         except json.JSONDecodeError as e:
             print(f"JSON decode error in topic '{channel.topic}': {e}")
