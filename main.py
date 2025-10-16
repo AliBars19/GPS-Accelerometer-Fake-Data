@@ -8,8 +8,11 @@
 
 #Were gna make the fake/raw data in JSON format
 
-#ID: 501 , CANgps (lat/long)
-#ID: 502 , IMU (accel,speed)
+#ID: 501 , latitude 
+#ID: 502 , Longitude
+#ID: 503 , altitude & speed
+#ID: 504 , Heading
+#ID: 505 , num_sat & fix_type
 
 #IMPORTANT, CAN SENDS TWO AT A TIME SO MAKE SURE TO PAIR THEM
 
@@ -29,13 +32,10 @@
 # if the precision is 6 didgits(52.0725) then what do we do with the other 2 digits, do we just add 00 at the end or smth
 
 import json
-import string
 import struct
-import time
 from time import time_ns
 from mcap.writer import Writer
 from mcap.reader import make_reader
-from numpy import double
 
 can_stream = [] #the list of can frames
 
@@ -44,7 +44,13 @@ with open('gps_silverstone.json', 'r') as f:
 
 def make_frame(id, values,timestamp, fmt='>f'):  #packs data into can frame, if not full 8 bytes is ysed, fills rest with 0
 
-        values_bytes = struct.pack(fmt, values)
+        # values_bytes = struct.pack(fmt, values)
+
+        if isinstance(values, tuple):
+            values_bytes = struct.pack(fmt, *values)
+        else:
+            values_bytes = struct.pack(fmt, values)
+
         if len(values_bytes) < 8:
             values_bytes += b'\x00' * (8 - len(values_bytes))
         elif len(values_bytes) > 8:
@@ -62,36 +68,18 @@ for point in gps_data:
    topic = str(point.get('topic'))
 
    lat = float(data.get('latitude'))
-   lon = float(data.get('longitude', 0.0))
-   alt = float(data.get('altitude', 0.0))
-   speed = float(data.get('speed', 0.0))
-   heading = float(data.get('heading', 0.0))
-   fix_type = float(data.get('fix_type', 0.0))
-   num_satellites = float(data.get('num_satellites', 0.0))
+   lon = float(data.get('longitude'))
+   alt = float(data.get('altitude'))
+   speed = float(data.get('speed'))
+   heading = float(data.get('heading'))
+   fix_type = int(data.get('fix_type'))
+   num_satellites = int(data.get('num_satellites'))
 
    can_stream.append(make_frame(501, lat,timestamp,fmt=">d"))
    can_stream.append(make_frame(502, lon,timestamp,fmt=">d"))
-   can_stream.append(make_frame(503, alt,timestamp,fmt=">d"))
-   can_stream.append(make_frame(504, speed,timestamp,fmt=">d"))
-   can_stream.append(make_frame(505, heading,timestamp,fmt=">d"))
-   can_stream.append(make_frame(506, fix_type,timestamp,fmt=">d"))
-   can_stream.append(make_frame(507, num_satellites,timestamp,fmt=">d"))
-
-   can_frame = {
-           "topic": topic,
-           "timestamp": timestamp, 
-           "data":{
-               "latitude": lat,
-               "longitude": lon,
-               "altitude": alt,
-               "speed": speed,
-               "heading": heading,
-               "fix_type": fix_type,
-               "num_satellites": num_satellites
-           }  
-       }
-
-   can_stream.append(can_frame)
+   can_stream.append(make_frame(503, (alt,speed),timestamp,fmt=">ff"))
+   can_stream.append(make_frame(504, heading,timestamp,fmt=">d"))
+   can_stream.append(make_frame(505, (fix_type,num_satellites),timestamp,fmt=">BB6x"))
 
 with open('can_gps_stream.json', 'w') as f:
     json.dump(can_stream, f, indent=4)
@@ -102,8 +90,7 @@ with open('can_gps_stream.json', 'r') as f:
 #MCAP WRITER
 #------------------
 
-
-
+# """
 
 can_data = "can_gps_stream.json"
 
@@ -193,3 +180,5 @@ with open("candata.mcap", "rb") as f:
         except json.JSONDecodeError as e:
             print(f"JSON decode error in topic '{channel.topic}': {e}")
             print(f"Raw data: {message.data}")
+
+# """
