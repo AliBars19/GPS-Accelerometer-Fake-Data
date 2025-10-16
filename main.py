@@ -108,22 +108,10 @@ with open("candata.mcap", "wb") as stream:
         message_encoding="json",
     )
 
-    for entry_idx, entry in enumerate(can_data_json):
-        if "time" in entry:
-            time_s = float(entry["time"])
-            log_time = int(time_s * 1_000_000_000)
-        elif "timestamp" in entry:
-            ts = entry["timestamp"]
-            if isinstance(ts, int) or (isinstance(ts, float) and ts > 1e12):
-                log_time = int(ts)
-            else:
-                log_time = int(float(ts) * 1_000_000_000)
-        else:
-            print(f"Warning: Entry {entry_idx} has no 'time' or 'timestamp'; using current time")
-            log_time = time_ns()
+    for entry in can_data_json:
+        ts = entry["timestamp"]
+        log_time = int(ts)
 
-        log_time = log_time
-        
         entry_json = json.dumps(entry).encode("utf-8")
         
         # Add message to MCAP file
@@ -154,9 +142,9 @@ with open("candata.mcap", "rb") as f:
             message_count += 1
             
             
-            # if message_count >= 5:
-            #     print(f"... (showing first 5 messages out of total)")
-            #     break
+            if message_count >= 5:
+                print(f"... (showing first 5 messages out of total)")
+                break
                 
         except json.JSONDecodeError as e:
             print(f"JSON decode error in topic '{channel.topic}': {e}")
