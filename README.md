@@ -19,7 +19,7 @@ To make this data readable and compatible with analysis tools, we convert each C
 - Store messages in an MCAP file with a defined schema  
 - Read back and print the first few messages  
 
----
+--
 
 ## ⚙️ Requirements
 
