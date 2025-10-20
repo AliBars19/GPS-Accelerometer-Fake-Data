@@ -6,11 +6,22 @@
 #Message
 #Footer
 
-#ID: 501 , latitude 
+#ID: 501 , latitude POSITION
 #ID: 502 , Longitude
-#ID: 503 , altitude & speed
+
+#ID: 503 , altitude VELOCITY
+#ID: 504 , speed
 #ID: 504 , Heading
-#ID: 505 , num_sat & fix_type
+
+#ID: 505 , num_sat & fix_type status
+
+
+
+#the overview file is the general layout(schema) 
+#but the indiviaul file (gps_silverstone.json) is what it actually looks like
+
+#create a master schema file (.txt), seperate into diff channels
+#raw data should still be in one json file but in different channels
 
 #------------------
 
@@ -22,7 +33,7 @@ from mcap.reader import make_reader
 
 can_stream = [] #the list of can frames
 
-with open('gps_silverstone.json', 'r') as f:
+with open('gokart_silverstone_topics.json', 'r') as f:
     gps_data = json.load(f)
 
 def make_frame(id, values,timestamp, fmt='>f'):  #packs data into can frame, if not full 8 bytes is ysed, fills rest with 0
