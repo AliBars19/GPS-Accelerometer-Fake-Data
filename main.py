@@ -33,7 +33,7 @@ from mcap.reader import make_reader
 
 can_stream = [] #the list of can frames
 
-with open('gokart_silverstone_topics.json', 'r') as f:
+with open('gokart_silverstone_with_altitude.json', 'r') as f:
     gps_data = json.load(f)
 
 def make_frame(id, values,timestamp, fmt='>f'):  #packs data into can frame, if not full 8 bytes is ysed, fills rest with 0
