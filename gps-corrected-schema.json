@@ -1,0 +1,120 @@
+{
+  "gps_position_schema": {
+    "name": "gps.Position",
+    "encoding": "jsonschema",
+    "schema": {
+      "type": "object",
+      "title": "GPS Position",
+      "description": "Geographic position from Vector GPS 5Hz receiver",
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "description": "Latitude in decimal degrees",
+          "minimum": -90,
+          "maximum": 90,
+          "unit": "degrees"
+        },
+        "longitude": {
+          "type": "number",
+          "description": "Longitude in decimal degrees",
+          "minimum": -180,
+          "maximum": 180,
+          "unit": "degrees"
+        },
+        "altitude": {
+          "type": "number",
+          "description": "Altitude above mean sea level",
+          "minimum": 0,
+          "maximum": 500,
+          "unit": "meters"
+        }
+      },
+      "required": ["latitude", "longitude", "altitude"]
+    },
+    "topic": "/vehicle/gps/position",
+    "update_rate_hz": 5
+  },
+  "gps_velocity_schema": {
+    "name": "gps.Velocity",
+    "encoding": "jsonschema",
+    "schema": {
+      "type": "object",
+      "title": "GPS Velocity",
+      "description": "Speed and heading from Vector GPS 5Hz receiver",
+      "properties": {
+        "speed": {
+          "type": "number",
+          "description": "Ground speed",
+          "minimum": 0,
+          "maximum": 50,
+          "unit": "km/h"
+        },
+        "heading": {
+          "type": "number",
+          "description": "Heading/course over ground",
+          "minimum": 0,
+          "maximum": 360,
+          "unit": "degrees"
+        }
+      },
+      "required": ["speed", "heading"]
+    },
+    "topic": "/vehicle/gps/velocity",
+    "update_rate_hz": 5
+  },
+  "gps_status_schema": {
+    "name": "gps.Status",
+    "encoding": "jsonschema",
+    "schema": {
+      "type": "object",
+      "title": "GPS Status",
+      "description": "Fix quality and satellite information from Vector GPS 5Hz receiver",
+      "properties": {
+        "fix_type": {
+          "type": "integer",
+          "description": "GPS fix type: 0=no fix, 1=dead reckoning, 2=2D fix, 3=3D fix, 4=3D fix with DGPS",
+          "minimum": 0,
+          "maximum": 4,
+          "enum": [0, 1, 2, 3, 4]
+        },
+        "num_satellites": {
+          "type": "integer",
+          "description": "Number of satellites used in fix",
+          "minimum": 0,
+          "maximum": 20,
+          "unit": "count"
+        }
+      },
+      "required": ["fix_type", "num_satellites"]
+    },
+    "topic": "/vehicle/gps/status",
+    "update_rate_hz": 5
+  },
+  "example_messages": {
+    "position_example": {
+      "topic": "/vehicle/gps/position",
+      "timestamp": 1760561955439310080,
+      "data": {
+        "latitude": 52.073519,
+        "longitude": -1.0155399,
+        "altitude": 134.18
+      }
+    },
+    "velocity_example": {
+      "topic": "/vehicle/gps/velocity",
+      "timestamp": 1760561955439310080,
+      "data": {
+        "speed": 13.74,
+        "heading": 89.95
+      }
+    },
+    "status_example": {
+      "topic": "/vehicle/gps/status",
+      "timestamp": 1760561955439310080,
+      "data": {
+        "fix_type": 4,
+        "num_satellites": 12
+      }
+    }
+  }
+} 

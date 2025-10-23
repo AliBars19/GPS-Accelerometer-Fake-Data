@@ -1,0 +1,2152 @@
+[
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368096104049920,
+    "data": {
+      "latitude": 52.0786,
+      "longitude": -1.0031345,
+      "altitude": 131.96
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368096104049920,
+    "data": {
+      "speed": 17.85,
+      "heading": 90.0
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368096104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368097104049920,
+    "data": {
+      "latitude": 52.0792175,
+      "longitude": -1.0031712,
+      "altitude": 132.22
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368097104049920,
+    "data": {
+      "speed": 18.82,
+      "heading": 94.19
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368097104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368098104049920,
+    "data": {
+      "latitude": 52.0798318,
+      "longitude": -1.0032812,
+      "altitude": 132.29
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368098104049920,
+    "data": {
+      "speed": 19.49,
+      "heading": 98.37
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368098104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368099104049920,
+    "data": {
+      "latitude": 52.0804395,
+      "longitude": -1.0034638,
+      "altitude": 132.43
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368099104049920,
+    "data": {
+      "speed": 21.05,
+      "heading": 102.56
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368099104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368100104049920,
+    "data": {
+      "latitude": 52.0810373,
+      "longitude": -1.0037181,
+      "altitude": 132.65
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368100104049920,
+    "data": {
+      "speed": 21.13,
+      "heading": 106.74
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368100104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368101104049920,
+    "data": {
+      "latitude": 52.0816222,
+      "longitude": -1.0040428,
+      "altitude": 132.79
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368101104049920,
+    "data": {
+      "speed": 21.87,
+      "heading": 110.93
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368101104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368102104049920,
+    "data": {
+      "latitude": 52.0821909,
+      "longitude": -1.004436,
+      "altitude": 132.97
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368102104049920,
+    "data": {
+      "speed": 22.92,
+      "heading": 115.12
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368102104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368103104049920,
+    "data": {
+      "latitude": 52.0827405,
+      "longitude": -1.0048958,
+      "altitude": 132.99
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368103104049920,
+    "data": {
+      "speed": 23.86,
+      "heading": 119.3
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368103104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368104104049920,
+    "data": {
+      "latitude": 52.083268,
+      "longitude": -1.0054196,
+      "altitude": 133.07
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368104104049920,
+    "data": {
+      "speed": 24.3,
+      "heading": 123.49
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368104104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368105104049920,
+    "data": {
+      "latitude": 52.0837705,
+      "longitude": -1.0060046,
+      "altitude": 133.16
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368105104049920,
+    "data": {
+      "speed": 25.72,
+      "heading": 127.67
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368105104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368106104049920,
+    "data": {
+      "latitude": 52.0842455,
+      "longitude": -1.0066478,
+      "altitude": 133.26
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368106104049920,
+    "data": {
+      "speed": 25.59,
+      "heading": 131.86
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368106104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368107104049920,
+    "data": {
+      "latitude": 52.0846904,
+      "longitude": -1.0073457,
+      "altitude": 133.21
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368107104049920,
+    "data": {
+      "speed": 26.2,
+      "heading": 136.05
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368107104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368108104049920,
+    "data": {
+      "latitude": 52.0851028,
+      "longitude": -1.0080946,
+      "altitude": 133.25
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368108104049920,
+    "data": {
+      "speed": 26.94,
+      "heading": 140.23
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368108104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368109104049920,
+    "data": {
+      "latitude": 52.0854804,
+      "longitude": -1.0088904,
+      "altitude": 133.05
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368109104049920,
+    "data": {
+      "speed": 27.73,
+      "heading": 144.42
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368109104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368110104049920,
+    "data": {
+      "latitude": 52.0858214,
+      "longitude": -1.009729,
+      "altitude": 133.0
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368110104049920,
+    "data": {
+      "speed": 28.69,
+      "heading": 148.6
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368110104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368111104049920,
+    "data": {
+      "latitude": 52.0861238,
+      "longitude": -1.0106058,
+      "altitude": 133.01
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368111104049920,
+    "data": {
+      "speed": 28.7,
+      "heading": 152.79
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368111104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368112104049920,
+    "data": {
+      "latitude": 52.0863861,
+      "longitude": -1.0115162,
+      "altitude": 132.78
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368112104049920,
+    "data": {
+      "speed": 28.99,
+      "heading": 156.98
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368112104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368113104049920,
+    "data": {
+      "latitude": 52.0866069,
+      "longitude": -1.0124554,
+      "altitude": 132.73
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368113104049920,
+    "data": {
+      "speed": 29.59,
+      "heading": 161.16
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368113104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368114104049920,
+    "data": {
+      "latitude": 52.0867849,
+      "longitude": -1.0134182,
+      "altitude": 132.59
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368114104049920,
+    "data": {
+      "speed": 29.36,
+      "heading": 165.35
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368114104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368115104049920,
+    "data": {
+      "latitude": 52.0869193,
+      "longitude": -1.0143997,
+      "altitude": 132.41
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368115104049920,
+    "data": {
+      "speed": 29.78,
+      "heading": 169.53
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368115104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368116104049920,
+    "data": {
+      "latitude": 52.0870093,
+      "longitude": -1.0153944,
+      "altitude": 132.34
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368116104049920,
+    "data": {
+      "speed": 29.8,
+      "heading": 173.72
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368116104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368117104049920,
+    "data": {
+      "latitude": 52.0870544,
+      "longitude": -1.0163973,
+      "altitude": 132.17
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368117104049920,
+    "data": {
+      "speed": 29.83,
+      "heading": 177.91
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368117104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368118104049920,
+    "data": {
+      "latitude": 52.0870544,
+      "longitude": -1.0174027,
+      "altitude": 131.99
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368118104049920,
+    "data": {
+      "speed": 29.59,
+      "heading": 182.09
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368118104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368119104049920,
+    "data": {
+      "latitude": 52.0870093,
+      "longitude": -1.0184056,
+      "altitude": 131.67
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368119104049920,
+    "data": {
+      "speed": 29.85,
+      "heading": 186.28
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368119104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368120104049920,
+    "data": {
+      "latitude": 52.0869193,
+      "longitude": -1.0194003,
+      "altitude": 131.64
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368120104049920,
+    "data": {
+      "speed": 30.06,
+      "heading": 190.47
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368120104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368121104049920,
+    "data": {
+      "latitude": 52.0867849,
+      "longitude": -1.0203818,
+      "altitude": 131.39
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368121104049920,
+    "data": {
+      "speed": 30.07,
+      "heading": 194.65
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368121104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368122104049920,
+    "data": {
+      "latitude": 52.0866069,
+      "longitude": -1.0213446,
+      "altitude": 131.28
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368122104049920,
+    "data": {
+      "speed": 29.16,
+      "heading": 198.84
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368122104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368123104049920,
+    "data": {
+      "latitude": 52.0863861,
+      "longitude": -1.0222838,
+      "altitude": 131.07
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368123104049920,
+    "data": {
+      "speed": 29.24,
+      "heading": 203.02
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368123104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368124104049920,
+    "data": {
+      "latitude": 52.0861238,
+      "longitude": -1.0231942,
+      "altitude": 131.03
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368124104049920,
+    "data": {
+      "speed": 28.81,
+      "heading": 207.21
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368124104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368125104049920,
+    "data": {
+      "latitude": 52.0858214,
+      "longitude": -1.024071,
+      "altitude": 130.88
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368125104049920,
+    "data": {
+      "speed": 28.49,
+      "heading": 211.4
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368125104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368126104049920,
+    "data": {
+      "latitude": 52.0854804,
+      "longitude": -1.0249096,
+      "altitude": 130.88
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368126104049920,
+    "data": {
+      "speed": 27.91,
+      "heading": 215.58
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368126104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368127104049920,
+    "data": {
+      "latitude": 52.0851028,
+      "longitude": -1.0257054,
+      "altitude": 130.92
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368127104049920,
+    "data": {
+      "speed": 27.26,
+      "heading": 219.77
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368127104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368128104049920,
+    "data": {
+      "latitude": 52.0846904,
+      "longitude": -1.0264543,
+      "altitude": 130.74
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368128104049920,
+    "data": {
+      "speed": 26.86,
+      "heading": 223.95
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368128104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368129104049920,
+    "data": {
+      "latitude": 52.0842455,
+      "longitude": -1.0271522,
+      "altitude": 130.71
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368129104049920,
+    "data": {
+      "speed": 26.23,
+      "heading": 228.14
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368129104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368130104049920,
+    "data": {
+      "latitude": 52.0837705,
+      "longitude": -1.0277954,
+      "altitude": 130.77
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368130104049920,
+    "data": {
+      "speed": 24.94,
+      "heading": 232.33
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368130104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368131104049920,
+    "data": {
+      "latitude": 52.083268,
+      "longitude": -1.0283804,
+      "altitude": 130.83
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368131104049920,
+    "data": {
+      "speed": 24.66,
+      "heading": 236.51
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368131104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368132104049920,
+    "data": {
+      "latitude": 52.0827405,
+      "longitude": -1.0289042,
+      "altitude": 130.98
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368132104049920,
+    "data": {
+      "speed": 24.13,
+      "heading": 240.7
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368132104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368133104049920,
+    "data": {
+      "latitude": 52.0821909,
+      "longitude": -1.029364,
+      "altitude": 131.1
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368133104049920,
+    "data": {
+      "speed": 23.44,
+      "heading": 244.88
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368133104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368134104049920,
+    "data": {
+      "latitude": 52.0816222,
+      "longitude": -1.0297572,
+      "altitude": 131.26
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368134104049920,
+    "data": {
+      "speed": 22.59,
+      "heading": 249.07
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368134104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368135104049920,
+    "data": {
+      "latitude": 52.0810373,
+      "longitude": -1.0300819,
+      "altitude": 131.33
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368135104049920,
+    "data": {
+      "speed": 21.53,
+      "heading": 253.26
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368135104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368136104049920,
+    "data": {
+      "latitude": 52.0804395,
+      "longitude": -1.0303362,
+      "altitude": 131.48
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368136104049920,
+    "data": {
+      "speed": 20.38,
+      "heading": 257.44
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368136104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368137104049920,
+    "data": {
+      "latitude": 52.0798318,
+      "longitude": -1.0305188,
+      "altitude": 131.7
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368137104049920,
+    "data": {
+      "speed": 19.45,
+      "heading": 261.63
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368137104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368138104049920,
+    "data": {
+      "latitude": 52.0792175,
+      "longitude": -1.0306288,
+      "altitude": 131.82
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368138104049920,
+    "data": {
+      "speed": 19.08,
+      "heading": 265.81
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368138104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368139104049920,
+    "data": {
+      "latitude": 52.0786,
+      "longitude": -1.0306655,
+      "altitude": 131.97
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368139104049920,
+    "data": {
+      "speed": 18.31,
+      "heading": 270.0
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368139104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368140104049920,
+    "data": {
+      "latitude": 52.0779825,
+      "longitude": -1.0306288,
+      "altitude": 132.12
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368140104049920,
+    "data": {
+      "speed": 18.82,
+      "heading": 274.19
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368140104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368141104049920,
+    "data": {
+      "latitude": 52.0773682,
+      "longitude": -1.0305188,
+      "altitude": 132.4
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368141104049920,
+    "data": {
+      "speed": 20.06,
+      "heading": 278.37
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368141104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368142104049920,
+    "data": {
+      "latitude": 52.0767605,
+      "longitude": -1.0303362,
+      "altitude": 132.43
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368142104049920,
+    "data": {
+      "speed": 20.98,
+      "heading": 282.56
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368142104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368143104049920,
+    "data": {
+      "latitude": 52.0761627,
+      "longitude": -1.0300819,
+      "altitude": 132.57
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368143104049920,
+    "data": {
+      "speed": 20.99,
+      "heading": 286.74
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368143104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368144104049920,
+    "data": {
+      "latitude": 52.0755778,
+      "longitude": -1.0297572,
+      "altitude": 132.88
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368144104049920,
+    "data": {
+      "speed": 22.04,
+      "heading": 290.93
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368144104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368145104049920,
+    "data": {
+      "latitude": 52.0750091,
+      "longitude": -1.029364,
+      "altitude": 132.84
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368145104049920,
+    "data": {
+      "speed": 23.05,
+      "heading": 295.12
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368145104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368146104049920,
+    "data": {
+      "latitude": 52.0744595,
+      "longitude": -1.0289042,
+      "altitude": 133.1
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368146104049920,
+    "data": {
+      "speed": 24.07,
+      "heading": 299.3
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368146104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368147104049920,
+    "data": {
+      "latitude": 52.073932,
+      "longitude": -1.0283804,
+      "altitude": 133.18
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368147104049920,
+    "data": {
+      "speed": 24.44,
+      "heading": 303.49
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368147104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368148104049920,
+    "data": {
+      "latitude": 52.0734295,
+      "longitude": -1.0277954,
+      "altitude": 133.2
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368148104049920,
+    "data": {
+      "speed": 25.56,
+      "heading": 307.67
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368148104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368149104049920,
+    "data": {
+      "latitude": 52.0729545,
+      "longitude": -1.0271522,
+      "altitude": 133.18
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368149104049920,
+    "data": {
+      "speed": 26.33,
+      "heading": 311.86
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368149104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368150104049920,
+    "data": {
+      "latitude": 52.0725096,
+      "longitude": -1.0264543,
+      "altitude": 133.25
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368150104049920,
+    "data": {
+      "speed": 26.25,
+      "heading": 316.05
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368150104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368151104049920,
+    "data": {
+      "latitude": 52.0720972,
+      "longitude": -1.0257054,
+      "altitude": 133.11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368151104049920,
+    "data": {
+      "speed": 26.92,
+      "heading": 320.23
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368151104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368152104049920,
+    "data": {
+      "latitude": 52.0717196,
+      "longitude": -1.0249096,
+      "altitude": 133.17
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368152104049920,
+    "data": {
+      "speed": 27.9,
+      "heading": 324.42
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368152104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368153104049920,
+    "data": {
+      "latitude": 52.0713786,
+      "longitude": -1.024071,
+      "altitude": 132.98
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368153104049920,
+    "data": {
+      "speed": 27.98,
+      "heading": 328.6
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368153104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368154104049920,
+    "data": {
+      "latitude": 52.0710762,
+      "longitude": -1.0231942,
+      "altitude": 133.05
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368154104049920,
+    "data": {
+      "speed": 28.74,
+      "heading": 332.79
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368154104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368155104049920,
+    "data": {
+      "latitude": 52.0708139,
+      "longitude": -1.0222838,
+      "altitude": 132.95
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368155104049920,
+    "data": {
+      "speed": 28.66,
+      "heading": 336.98
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368155104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368156104049920,
+    "data": {
+      "latitude": 52.0705931,
+      "longitude": -1.0213446,
+      "altitude": 132.8
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368156104049920,
+    "data": {
+      "speed": 29.38,
+      "heading": 341.16
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368156104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368157104049920,
+    "data": {
+      "latitude": 52.0704151,
+      "longitude": -1.0203818,
+      "altitude": 132.63
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368157104049920,
+    "data": {
+      "speed": 29.58,
+      "heading": 345.35
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368157104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368158104049920,
+    "data": {
+      "latitude": 52.0702807,
+      "longitude": -1.0194003,
+      "altitude": 132.4
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368158104049920,
+    "data": {
+      "speed": 29.35,
+      "heading": 349.53
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368158104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368159104049920,
+    "data": {
+      "latitude": 52.0701907,
+      "longitude": -1.0184056,
+      "altitude": 132.28
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368159104049920,
+    "data": {
+      "speed": 29.86,
+      "heading": 353.72
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368159104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368160104049920,
+    "data": {
+      "latitude": 52.0701456,
+      "longitude": -1.0174027,
+      "altitude": 132.17
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368160104049920,
+    "data": {
+      "speed": 29.96,
+      "heading": 357.91
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368160104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368161104049920,
+    "data": {
+      "latitude": 52.0701456,
+      "longitude": -1.0163973,
+      "altitude": 131.86
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368161104049920,
+    "data": {
+      "speed": 30.31,
+      "heading": 2.09
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368161104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368162104049920,
+    "data": {
+      "latitude": 52.0701907,
+      "longitude": -1.0153944,
+      "altitude": 131.83
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368162104049920,
+    "data": {
+      "speed": 29.49,
+      "heading": 6.28
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368162104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368163104049920,
+    "data": {
+      "latitude": 52.0702807,
+      "longitude": -1.0143997,
+      "altitude": 131.56
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368163104049920,
+    "data": {
+      "speed": 29.91,
+      "heading": 10.47
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368163104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368164104049920,
+    "data": {
+      "latitude": 52.0704151,
+      "longitude": -1.0134182,
+      "altitude": 131.46
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368164104049920,
+    "data": {
+      "speed": 29.77,
+      "heading": 14.65
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368164104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368165104049920,
+    "data": {
+      "latitude": 52.0705931,
+      "longitude": -1.0124554,
+      "altitude": 131.34
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368165104049920,
+    "data": {
+      "speed": 29.32,
+      "heading": 18.84
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368165104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368166104049920,
+    "data": {
+      "latitude": 52.0708139,
+      "longitude": -1.0115162,
+      "altitude": 131.22
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368166104049920,
+    "data": {
+      "speed": 29.44,
+      "heading": 23.02
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368166104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368167104049920,
+    "data": {
+      "latitude": 52.0710762,
+      "longitude": -1.0106058,
+      "altitude": 131.0
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368167104049920,
+    "data": {
+      "speed": 28.5,
+      "heading": 27.21
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368167104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368168104049920,
+    "data": {
+      "latitude": 52.0713786,
+      "longitude": -1.009729,
+      "altitude": 131.02
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368168104049920,
+    "data": {
+      "speed": 28.49,
+      "heading": 31.4
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368168104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368169104049920,
+    "data": {
+      "latitude": 52.0717196,
+      "longitude": -1.0088904,
+      "altitude": 130.77
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368169104049920,
+    "data": {
+      "speed": 28.14,
+      "heading": 35.58
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368169104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368170104049920,
+    "data": {
+      "latitude": 52.0720972,
+      "longitude": -1.0080946,
+      "altitude": 130.72
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368170104049920,
+    "data": {
+      "speed": 27.69,
+      "heading": 39.77
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368170104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368171104049920,
+    "data": {
+      "latitude": 52.0725096,
+      "longitude": -1.0073457,
+      "altitude": 130.71
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368171104049920,
+    "data": {
+      "speed": 26.95,
+      "heading": 43.95
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368171104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368172104049920,
+    "data": {
+      "latitude": 52.0729545,
+      "longitude": -1.0066478,
+      "altitude": 130.78
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368172104049920,
+    "data": {
+      "speed": 25.59,
+      "heading": 48.14
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368172104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368173104049920,
+    "data": {
+      "latitude": 52.0734295,
+      "longitude": -1.0060046,
+      "altitude": 130.91
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368173104049920,
+    "data": {
+      "speed": 25.78,
+      "heading": 52.33
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368173104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368174104049920,
+    "data": {
+      "latitude": 52.073932,
+      "longitude": -1.0054196,
+      "altitude": 130.9
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368174104049920,
+    "data": {
+      "speed": 24.72,
+      "heading": 56.51
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368174104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 11
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368175104049920,
+    "data": {
+      "latitude": 52.0744595,
+      "longitude": -1.0048958,
+      "altitude": 130.89
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368175104049920,
+    "data": {
+      "speed": 23.49,
+      "heading": 60.7
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368175104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368176104049920,
+    "data": {
+      "latitude": 52.0750091,
+      "longitude": -1.004436,
+      "altitude": 131.03
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368176104049920,
+    "data": {
+      "speed": 23.57,
+      "heading": 64.88
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368176104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368177104049920,
+    "data": {
+      "latitude": 52.0755778,
+      "longitude": -1.0040428,
+      "altitude": 131.26
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368177104049920,
+    "data": {
+      "speed": 22.62,
+      "heading": 69.07
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368177104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368178104049920,
+    "data": {
+      "latitude": 52.0761627,
+      "longitude": -1.0037181,
+      "altitude": 131.26
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368178104049920,
+    "data": {
+      "speed": 21.59,
+      "heading": 73.26
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368178104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368179104049920,
+    "data": {
+      "latitude": 52.0767605,
+      "longitude": -1.0034638,
+      "altitude": 131.4
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368179104049920,
+    "data": {
+      "speed": 20.19,
+      "heading": 77.44
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368179104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368180104049920,
+    "data": {
+      "latitude": 52.0773682,
+      "longitude": -1.0032812,
+      "altitude": 131.62
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368180104049920,
+    "data": {
+      "speed": 19.4,
+      "heading": 81.63
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368180104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  },
+  {
+    "topic": "/vehicle/gps/position",
+    "timestamp": 1723368181104049920,
+    "data": {
+      "latitude": 52.0779825,
+      "longitude": -1.0031712,
+      "altitude": 131.92
+    }
+  },
+  {
+    "topic": "/vehicle/gps/velocity",
+    "timestamp": 1723368181104049920,
+    "data": {
+      "speed": 19.21,
+      "heading": 85.81
+    }
+  },
+  {
+    "topic": "/vehicle/gps/status",
+    "timestamp": 1723368181104049920,
+    "data": {
+      "fix_type": 4,
+      "num_satellites": 10
+    }
+  }
+]
