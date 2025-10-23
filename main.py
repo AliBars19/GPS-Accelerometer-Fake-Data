@@ -30,54 +30,7 @@ import struct
 from time import time_ns
 from mcap.writer import Writer
 from mcap.reader import make_reader
-
-can_stream = [] #the list of can frames
-
-with open('gokart_silverstone_topics.json', 'r') as f:
-    gps_data = json.load(f)
-
-def make_frame(id, values,timestamp, fmt='>f'):  #packs data into can frame, if not full 8 bytes is ysed, fills rest with 0
-
-        if isinstance(values, tuple): # this is used for (altitude and speed) and (fix_type and num_sat)
-            values_bytes = struct.pack(fmt, *values)
-        else:
-            values_bytes = struct.pack(fmt, values)
-
-        if len(values_bytes) < 8: # used to pack lat long and heading
-            values_bytes += b'\x00' * (8 - len(values_bytes))
-        elif len(values_bytes) > 8:
-            values_bytes = values_bytes[:8]  # Truncate to 8 bytes
-        return {
-            "id": id,
-            "timestamp": timestamp,
-            "data": list(values_bytes)
-        }
-
-
-for point in gps_data:
-   timestamp = int(point['timestamp'])  # declaring everything
-   data = point.get('data',{})
-   topic = str(point.get('topic'))
-
-   lat = float(data.get('latitude'))
-   lon = float(data.get('longitude'))
-   alt = float(data.get('altitude'))
-   speed = float(data.get('speed'))
-   heading = float(data.get('heading'))
-   fix_type = int(data.get('fix_type'))
-   num_satellites = int(data.get('num_satellites'))
-
-   can_stream.append(make_frame(501, lat,timestamp,fmt=">d")) #making the can frames
-   can_stream.append(make_frame(502, lon,timestamp,fmt=">d"))
-   can_stream.append(make_frame(503, (alt,speed),timestamp,fmt=">ff"))
-   can_stream.append(make_frame(504, heading,timestamp,fmt=">d"))
-   can_stream.append(make_frame(505, (fix_type,num_satellites),timestamp,fmt=">BB6x"))
-
-with open('can_gps_stream.json', 'w') as f:
-    json.dump(can_stream, f, indent=4)
-
-with open('can_gps_stream.json', 'r') as f:
-    can_stream = json.load(f)  
+ 
 #------------------
 #MCAP WRITER
 #------------------
