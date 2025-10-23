@@ -90,6 +90,12 @@
     "topic": "/vehicle/gps/status",
     "update_rate_hz": 5
   },
+
+
+  
+
+
+
   "example_messages": {
     "position_example": {
       "topic": "/vehicle/gps/position",

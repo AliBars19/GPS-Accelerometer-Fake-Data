@@ -1,89 +1,94 @@
-#General MCAP Format (for reference(help i wanna kms))
-
-#Header
-#Schema
-#Channel
-#Message
-#Footer
-
-#ID: 501 , latitude POSITION
-#ID: 502 , Longitude
-
-#ID: 503 , altitude VELOCITY
-#ID: 504 , speed
-#ID: 504 , Heading
-
-#ID: 505 , num_sat & fix_type status
-
-
-
-#the overview file is the general layout(schema) 
-#but the indiviaul file (gps_silverstone.json) is what it actually looks like
-
-#create a master schema file (.txt), seperate into diff channels
-#raw data should still be in one json file but in different channels
-
 #------------------
 
 import json
-import struct
 from time import time_ns
 from mcap.writer import Writer
 from mcap.reader import make_reader
  
 #------------------
-#MCAP WRITER
+#MCAP WRITER FOR GPS DATA, EDITED FOR GPS SCHEMA (check gps-corrected-schema.json for reference)
 #------------------
 
-# """
-
-can_data = "can_gps_stream.json"
+can_data = "gokart_silverstonelap_fakedata.json"
 
 # get json data from file 
 with open(can_data, "r") as f:
-    can_data_json = json.load(f)
+    gps_data = json.load(f)
 
-with open("candata.mcap", "wb") as stream:
+with open("gpsfakedata.mcap", "wb") as stream:
     writer = Writer(stream)
     writer.start()
 
     # Register schema for CAN message format
-    schema_id = writer.register_schema(
-        name="can_data",
+    schema_position = writer.register_schema(
+        name="gps.Position",
         encoding="jsonschema",
         data=json.dumps({
             "type": "object",
             "properties": {
-                "id": {"type": "integer"},
-                "time": {"type": "number"},
-                "timestamp": {"type": "number"},
-                "data": {
-                    "type": "array",
-                    "items": {"type": "integer"}
-                }
-            }
-        }).encode(),
+                "latitude": {"type": "number"},
+                "longitude": {"type": "number"},
+                "altitude": {"type": "number"},
+            },
+            "required": ["latitude", "longitude", "altitude"]
+        }).encode("utf-8"),
+    )
+    schema_velocity = writer.register_schema(
+        name="gps.Velocity",
+        encoding="jsonschema",
+        data=json.dumps({
+            "type": "object",
+            "properties": {
+                "speed": {"type": "number"},
+                "heading": {"type": "number"},
+            },
+            "required": ["speed", "heading"]
+        }).encode("utf-8"),
+    )
+    schema_status = writer.register_schema(
+        name="gps.Status",
+        encoding="jsonschema",
+        data=json.dumps({
+            "type": "object",
+            "properties": {
+                "num_satellites": {"type": "integer"},
+                "fix_type": {"type": "integer"},
+            },
+            "required": ["num_satellites", "fix_type"]
+        }).encode("utf-8"),
     )
     
     # Register channel
-    channel_id = writer.register_channel(
-        schema_id=schema_id,
-        topic="can_messages",
-        message_encoding="json",
-    )
+    channels = {
+        "/vehicle/gps/position": writer.register_channel(
+            schema_id=schema_position,
+            topic="/vehicle/gps/position",
+            message_encoding="json",
+        ),
+        "/vehicle/gps/velocity": writer.register_channel(
+            schema_id=schema_velocity,
+            topic="/vehicle/gps/velocity",
+            message_encoding="json",
+        ),
+        "/vehicle/gps/status": writer.register_channel(
+            schema_id=schema_status,
+            topic="/vehicle/gps/status",
+            message_encoding="json",
+        ),
+    }
+    
 
-    for entry in can_data_json:
-        ts = entry["timestamp"]
-        log_time = int(ts)
-
-        entry_json = json.dumps(entry).encode("utf-8")
+    for entry in gps_data:
+        topic = entry["topic"]
+        log_time = int(entry["timestamp"])
+        data_json = json.dumps(entry["data"]).encode("utf-8")
         
         # Add message to MCAP file
         writer.add_message(
-            channel_id=channel_id,
+            channel_id=channels[topic],
             log_time=log_time,
-            data=entry_json,
-            publish_time=time_ns()
+            publish_time=time_ns(),
+            data=data_json,
         )
 
     writer.finish()
@@ -91,7 +96,7 @@ with open("candata.mcap", "wb") as stream:
 print("Reading MCAP file contents:")
 print("=" * 50)
 
-with open("candata.mcap", "rb") as f:
+with open("gpsfakedata.mcap", "rb") as f:
     reader = make_reader(f)
     
     message_count = 0
@@ -106,9 +111,9 @@ with open("candata.mcap", "rb") as f:
             message_count += 1
             
             
-            if message_count >= 5:
-                print(f"... (showing first 5 messages out of total)")
-                break
+            # if message_count >= 5:
+            #     print(f"... (showing first 5 messages out of total)")
+            #     break
                 
         except json.JSONDecodeError as e:
             print(f"JSON decode error in topic '{channel.topic}': {e}")
